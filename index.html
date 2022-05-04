@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="./src/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <h2 class="main-heading">how my stocks are doing</h2>
+      <form class="user-form">
+        <label for="purchase-price" class="input-label">Purchase price:</label>
+        <input
+          id="purchase-price"
+          type="number"
+          placeholder="Enter purchase price"
+          required
+        />
+        <label for="quantity" class="input-label">Quantity:</label>
+        <input
+          id="quantity"
+          type="number"
+          placeholder="Enter stocks quantity"
+          required
+        />
+        <label for="current-price" class="input-label"
+          >Current market price:</label
+        >
+        <input
+          id="current-price"
+          type="number"
+          placeholder="Enter current price"
+          required
+        />
+        <button type="submit" id="submit-button">Check Gain/Loss</button>
+      </form>
+      <div id="output"></div>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
